@@ -1,0 +1,11 @@
+<p id='red' *ngIf='toModify < 0'>{{ toModify }}</p>
+<p id='green' *ngIf='toModify >= 0'>{{ toModify }}</p>
+<br>
+<button (click)='incrementNb(1)'>+ 1</button>
+<button (click)='incrementNb(5)'>+ 5</button>
+<br>
+<button (click)='decrementNb(1)'>- 1</button>
+<button (click)='decrementNb(5)'>- 5</button>
+<br>
+<br>
+<a routerLink="/index">Go back to index</a>

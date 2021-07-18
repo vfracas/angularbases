@@ -1,0 +1,11 @@
+<p>{{ myString }}</p>
+<p *ngFor="let couvert of tiroir">
+  {{ couvert }}
+</p>
+
+<input type="text" #addInput>
+<button (click)='changeMyString(addInput.value)'>Change my string</button>
+
+<p>{{ testService.testVariable }}</p>
+
+<a routerLink="/second-component">Link to second component</a>
